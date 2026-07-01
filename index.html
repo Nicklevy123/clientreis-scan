@@ -739,7 +739,7 @@
         { tekst: "Er is geen structurele monitoring", score: 1 },
         { tekst: "Ad hoc, op basis van casusbesprekingen", score: 2 },
         { tekst: "Periodiek via rapportages in ons EPD", score: 3 },
-        { tekst: "Real-time via een centraal systeem met automatische signalen", score: 4 }
+        { tekst: "We werken met een systeem dat ons direct waarschuwt als een cliënt dreigt vast te lopen", score: 4 }
       ]
     },
     {
@@ -774,7 +774,7 @@
     },
     {
       sectie: "Uitstroom",
-      tekst: "Hoe goed is de samenwerking met externe partijen bij uitstroom, zoals gemeente, woningcorporaties of huisarts?",
+      tekst: "Hoe goed is de samenwerking met externe partijen bij uitstroom, zoals verwijzers, gemeenten of andere zorgaanbieders?",
       opties: [
         { tekst: "Weinig tot geen structurele samenwerking bij uitstroom", score: 1 },
         { tekst: "Samenwerking afhankelijk van individuele contacten, niet gestructureerd", score: 2 },
@@ -784,12 +784,12 @@
     },
     {
       sectie: "Uitstroom",
-      tekst: "Hoe meet u de effectiviteit van uw zorgtrajecten na uitstroom?",
+      tekst: "Weet u wat er met uw cliënten gebeurt nadat ze uw organisatie verlaten?",
       opties: [
-        { tekst: "Systematisch via gevalideerde vragenlijsten en follow-up contacten", score: 4 },
-        { tekst: "Gedeeltelijk via enkele metingen, maar niet volledig", score: 3 },
-        { tekst: "Nauwelijks, alleen op aanvraag of incidenteel", score: 2 },
-        { tekst: "Effectiviteit wordt niet structureel gemeten na uitstroom", score: 1 }
+        { tekst: "Ja, we volgen cliënten structureel op en weten hoe het met ze gaat", score: 4 },
+        { tekst: "We hebben globaal zicht, maar meten dit niet systematisch", score: 3 },
+        { tekst: "Zelden, alleen als een cliënt zelf terugkomt of doorverwezen wordt", score: 2 },
+        { tekst: "Nee, na uitstroom verliezen we het contact", score: 1 }
       ]
     }
   ];
@@ -893,15 +893,15 @@
     if (totaal <= 18) {
       badge.textContent = 'Veel groeipotentieel';
       badge.className = 'result-verdict-badge verdict-low';
-      desc.textContent = 'Uw organisatie loopt op meerdere onderdelen van de clientreis tegen knelpunten aan. Er is veel winst te behalen door gerichte verbeteringen in instroom, doorstroom en uitstroom. Growtivity kan u hierbij ondersteunen.';
+      desc.textContent = 'Op meerdere plekken in de cliëntreis zit wrijving. Dat is herkenbaar voor veel zorgorganisaties, en het is ook op te lossen. Onze specialisten laten u zien waar u het snelst resultaat boekt.';
     } else if (totaal <= 27) {
       badge.textContent = 'Goede basis, ruimte voor groei';
       badge.className = 'result-verdict-badge verdict-mid';
-      desc.textContent = 'U heeft een solide fundament maar er zijn duidelijke verbeterkansen. Met gerichte optimalisaties kunt u de efficientie van uw clientreis aanzienlijk verbeteren.';
+      desc.textContent = 'Uw organisatie heeft een werkende basis, maar op één of meerdere onderdelen loopt de cliëntreis vast. Dat kost tijd, capaciteit en soms cliënten. Een gesprek van 30 minuten met een van onze specialisten maakt concreet waar de grootste winst zit.';
     } else {
       badge.textContent = 'Sterk ingericht';
       badge.className = 'result-verdict-badge verdict-high';
-      desc.textContent = 'Uw organisatie is sterk ingericht op de clientreis. Er is nog ruimte voor fijnafstelling en innovatie om ook in de toekomst voorop te lopen.';
+      desc.textContent = 'Uw cliëntreis is sterk ingericht. Toch zien wij bij organisaties met vergelijkbare scores vaak nog concrete kansen om doorlooptijden verder te verkorten en uitval te reduceren. Benieuwd wat dat voor u betekent?';
     }
 
     // Breakdown bars
